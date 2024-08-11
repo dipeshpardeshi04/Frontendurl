@@ -1,0 +1,132 @@
+/* Hero section styles */
+.hero {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    /* border: 100px; */
+    border-radius: 30px;
+    /* background-color: aqua; */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* border: 30px; */
+}
+
+.text-content {
+    max-width: 600px;
+    margin-bottom: 0px;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.text-content h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input[type="url"] {
+    width: 60%;
+    margin: 10px 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+input[type="text"]:focus {
+    border-color: #66b3ff;
+}
+
+input[type="text"]:focus + .input-icon {
+    color: #66b3ff;
+}
+/* button{
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 150px;
+    margin-bottom: 10px;
+    margin: 10px;
+} */
+
+
+.styled-button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #66b3ff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.styled-button:hover {
+    background-color: #5599e6;
+    transform: translateY(-2px);
+}
+
+.styled-button:active {
+    background-color: #4477cc;
+    transform: translateY(0);
+}
+.text-content p {
+    font-size: 18px;
+    color: #666;
+}
+
+.image-content{
+    /* max-width: 100%; */
+    width: 400px;
+    height: 400px;
+    height: auto;
+    border-radius: 8px;
+    /* background-color: black; */
+}
+.anima2{
+    width: 200px;
+    height: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0px 0px 0px 0px;
+    align-content: center;
+    /* background-color: #5599e6; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh;  */
+    margin-left: 10vw;
+}
+
+
+
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .hero-content {
+        flex-direction: row;
+        text-align: left;
+    }
+    input[type="text"]{
+        padding: 12px;
+        border-radius: 5px;
+        /* border: 1px solid #ccc; */
+        font-size: 12px;
+        width: 260px;
+        margin-bottom: 10px;
+    }
+    .text-content {
+        margin-bottom: 0;
+    }
+}

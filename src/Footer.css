@@ -1,0 +1,20 @@
+/* Footer Styles */
+footer {
+    background-color: whitesmoke; /* Dark background color */
+    height: 70px;
+    color: black; /* White text color */
+    /* padding: 10px; Padding around the footer */
+    text-align: center; /* Center align the text */
+    padding-bottom: 20px;
+    border-top: 1px solid #fff ;
+  }
+  
+  footer a {
+    color: #1e90ff; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
