@@ -17,7 +17,7 @@ function Hero() {
 
   const checkFileReady = async () => {
     try {
-      const response = await axios.get("https://backendser-v0kp.onrender.com/status");
+      const response = await axios.get("https://backendser-gkue.onrender.com//status");
       return response.data.isFileReady;
     } catch (error) {
       console.error("Error checking file status:", error);
@@ -27,7 +27,7 @@ function Hero() {
 
   const Download = async () => {
     try {
-      const response = await axios.get("https://backendser-v0kp.onrender.com/pdfs", {
+      const response = await axios.get("https://backendser-gkue.onrender.com//pdfs", {
         responseType: "blob",
       });
       fileDownload(response.data, `${URL.split("/")[4]}.pdf`);
@@ -44,7 +44,7 @@ function Hero() {
     setIsWaiting(true); // Set waiting state to true on form submission
 
     try {
-      const response = await axios.post("https://backendser-v0kp.onrender.com/urll", {
+      const response = await axios.post("https://backendser-gkue.onrender.com//urll", {
         url: URL,
       });
       console.log("Response:", response.data);
