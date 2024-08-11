@@ -44,6 +44,7 @@ function Hero() {
     setIsWaiting(true); // Set waiting state to true on form submission
 
     try {
+      console.log("Submitting URL:", URL);
       const response = await axios.post("https://backendser-gkue.onrender.com//urll", {
         url: URL,
       });
