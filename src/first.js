@@ -57,7 +57,7 @@ function Hero() {
           clearInterval(pollInterval);
           setIsWaiting(false); // Stop the waiting animation
           // setIsReady(true); // Set ready state to true
-          // await Download(); // Download the file once it's ready
+          await Download(); // Download the file once it's ready
         }
       }, 1000); // Check every second
     } catch (error) {
