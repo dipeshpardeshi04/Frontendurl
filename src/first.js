@@ -18,6 +18,7 @@ function Hero() {
   const checkFileReady = async () => {
     try {
       const response = await axios.get("https://backendser-gkue.onrender.com/status");
+      console.log(response.data.isFileReady);
       return response.data.isFileReady;
     } catch (error) {
       console.error("Error checking file status:", error);
