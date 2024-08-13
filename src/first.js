@@ -61,7 +61,7 @@ function Hero() {
           // setIsReady(true); // Set ready state to true
           await Download(); // Download the file once it's ready
         }
-      }, 1000); // Check every second
+      }, 5000); // Check every second
     } catch (error) {
       console.error("Error submitting the URL:", error);
       toast.error("Failed to submit the URL");
