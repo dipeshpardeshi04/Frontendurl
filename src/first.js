@@ -17,7 +17,7 @@ function Hero() {
 
   const checkFileReady = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/status");
+      const response = await axios.get("http://127.0.0.1:8000/status");
       // console.log(`HELLLLLLLLLLLLLLLLLLL ${response.data.isFileReady}`);
       return response.data.isFileReady;
     } catch (error) {
@@ -28,7 +28,7 @@ function Hero() {
 
   const Download = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/pdfs", {
+      const response = await axios.get("http://127.0.0.1:8000/pdfs", {
         responseType: "blob",
       });
       fileDownload(response.data, `${URL.split("/")[4]}.pdf`);
@@ -46,7 +46,7 @@ function Hero() {
 
     try {
       console.log("Submitting URL:", URL);
-      const response = await axios.post("http://localhost:4000/urll", {
+      const response = await axios.post("http://127.0.0.1:8000/urll", {
         url: URL,
       });
       console.log("Response:", response.data);
